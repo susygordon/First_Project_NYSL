@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Nombre de la página que figura en la pestaña del browser-->
+  <title>Registration form</title>
+  <!--El siguiente elemento es para que vincular al html con el css correspondiente que le dará el estilo-->
+  <link rel="stylesheet" type="text/css" href="styles/nysl_6.css">
+</head>
+
+<body>
+
+  <header class=contenedor>
+    <h1>Northside Youth Soccer League</h1>
+    <img id=logo src="nysl_logo.png" alt=logo>
+  </header>
+  
+  <nav>
+    <!-- Menú de navegación que también estará en las otras páginas, para permitir al usuario moverse entre ellas-->
+    <a href="index.html">Home</a>
+	<a href="about.html">About</a>
+	<a href="contact.html">Contact</a>
+    <a href="rules.html">Rules</a>
+    <a href="game_info.html">Game_inf</a>
+    <a>Reg_form</a>
+  </nav>
+  
+  <section> 
+  <!-- Título H2 para identificar el formulario-->
+  <h2>Registration form</h2>
+  
+  <!-- Label con input tipo texto para comenzar con los datos principales que son textos principalmente-->
+  <form action="show_data">
+    <label for="name">Player’s First Name:</label>
+    <input type="text">
+    <label for="name">Last name:</label>
+    <input type="text">
+  </form>
+    
+  <form action="show_data">
+    <label for="name">Street address:</label>
+    <input type="text">
+  </form>
+    
+  <form action="show_data">
+    <label for="name">City:</label>
+    <input type="text">
+    <label for="name">Zip code:</label>
+    <input type="text">
+  </form>
+    
+  <!-- Label con input tipo fecha para el nacimiento y checkbox para género y grado-->
+  <form action="show_data">
+    <label for="date">Birth Date</label>
+    <input type="date">
+    <label>Gender:</label>
+    <input type="checkbox">
+    <label for="gender">Female</label>
+    <input type="checkbox">
+    <label for="gender">Male</label>
+  </form>
+    
+  <form action="show_data">
+    <label for="grade">Grade:</label>
+    <input type="checkbox">
+    <label for="grade"> Pre-School</label>
+    <input type="checkbox">
+    <label for="grade">1<sup>st</sup></label>
+    <input type="checkbox">
+    <label for="grade">2<sup>nd</sup></label>
+    <input type="checkbox">
+    <label for="grade">3<sup>rd</sup></label>
+    <input type="checkbox">
+    <label for="grade">4<sup>th</sup></label>
+    <input type="checkbox">
+    <label for="grade">5<sup>th</sup></label>
+  </form>
+    
+  <form action="show_data">
+    <label for="name">Parent/Guardian:</label>
+    <input type="text">
+  </form>
+    
+  <!-- Label con input tipo tel para el teléfono y tipo email para el correo electrónico-->
+  <form action="show_data">
+    <label for="tel">Contact Phone:</label>
+    <input type="tel">
+    <label for="email">Contact Email:</label>
+    <input type="email">
+  </form>
+    
+  
+   <!-- Para poder organizar los colegios se utilizó una tabla con su título-->
+  <form action="show_data">
+    <legend>Which elementary schools do you live near?</legend>  
+  </form>
+  
+  <table> 
+    <thead> 
+    <tr>
+      <th colspan="4">First Closest School:</th>
+      <th colspan="8">Second Closest School:</th>
+    </tr>
+    </thead>
+    
+    <tbody> 
+    <tr>
+      <td><input type="checkbox"></td>
+      <td>AJ Katzenmaier</td>
+      <td><input type="checkbox"></td>
+      <td>Marjorie P Hart</td>
+      <td><input type="checkbox"></td>
+      <td>AJ Katzenmaier</td>
+      <td><input type="checkbox"></td>
+      <td>Marjorie P Hart</td>
+    </tr>
+      
+    <tr>
+      <td><input type="checkbox"></td>
+      <td>Greenbay</td>
+      <td><input type="checkbox"></td>
+      <td>North Elementary</td>
+      <td><input type="checkbox"></td>
+      <td>Greenbay</td>
+      <td><input type="checkbox"></td>
+      <td id="name">North Elementary</td>
+    </tr>
+    
+    <tr>
+      <td><input type="checkbox"></td>
+      <td class="school"> Howard A Yeager</td>
+      <td><input type="checkbox"></td>
+      <td>South Elementary</td>
+      <td><input type="checkbox"></td>
+      <td> Howard A Yeager</td>
+      <td><input type="checkbox"></td>
+      <td>South Elementary</td>
+    </tr>
+    
+    </tbody>
+  </table>
+    
+   <!-- Igualmente para organizar las posiciones, se utilizó una tabla y para resaltar la primera legend se utilizó strong-->
+  <form action="show_data">
+    <legend><strong>What position(s) do you normally play?</strong>(check all that apply)</legend>  
+  </form>
+    
+  <table>
+    <tr>
+      <td><input type="checkbox"></td>
+      <td>Forward</td>
+      <td><input type="checkbox"></td>
+      <td>Midfield</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"></td>
+      <td>Defense</td>
+      <td><input type="checkbox"></td>
+      <td>Goalkeeper</td>
+    </tr>
+    
+  </table>
+  
+  <form action="show_data">
+    <legend><strong>What position(s) do you normally play?</strong>(check all that apply)</legend>  
+  </form>
+    
+  <table>
+    <tr>
+      <td><input type="checkbox"></td>
+      <td>Forward</td>
+      <td><input type="checkbox"></td>
+      <td>Midfield</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"></td>
+      <td>Defense</td>
+      <td><input type="checkbox"></td>
+      <td>Goalkeeper</td>
+    </tr>
+    
+  </table>
+  
+  <!-- Para resaltar el texto se utilizó strong-->
+  <form>
+    <input type="checkbox">
+    <label><strong>Already Have a Uniform</strong></label>
+  </form>
+    
+  <!-- De igual forma para organizar los uniformes y tallas, se utilizó una tabla-->
+  <table> 
+    <thead> 
+    <tr>
+      <th colspan="4">Jersey Size:</th>
+      <th colspan="8">Short Size:</th>
+    </tr>
+    </thead>
+    
+    <tbody> 
+    <tr>
+      <td><input type="checkbox"></td>
+      <td>Youth Small</td>
+      <td><input type="checkbox"></td>
+      <td>Medium</td>
+      <td><input type="checkbox"></td>
+      <td>Youth Small</td>
+      <td><input type="checkbox"></td>
+      <td>Medium</td>
+    </tr>
+      
+    <tr>
+      <td><input type="checkbox"></td>
+      <td>Youth Medium</td>
+      <td><input type="checkbox"></td>
+      <td>Large</td>
+      <td><input type="checkbox"></td>
+      <td>Youth Medium</td>
+      <td><input type="checkbox"></td>
+      <td>Large</td>
+    </tr>
+    
+    <tr>
+      <td><input type="checkbox"></td>
+      <td class="school">Youth Large</td>
+      <td><input type="checkbox"></td>
+      <td>Extra-Large</td>
+      <td><input type="checkbox"></td>
+      <td>Youth Large</td>
+      <td><input type="checkbox"></td>
+      <td>Extra-Large</td>
+    </tr>
+      
+    <tr>
+      <td><input type="checkbox"></td>
+      <td class="school" colspan="3">Small</td>
+      <td><input type="checkbox"></td>
+      <td colspan="8">Small</td>
+     </tr>
+    </tbody>
+  </table>
+  
+  <h3>Permission to Play</h3>
+  <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation. </p>
+  <p>By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+  <p>Parent/Guardian Signature: _____________________________________________________    Date: ___________________ </p>
+  
+  <!-- Se utilizó esta opción para crear los botones para envío del formulario y reset-->
+  <form action="index.html"> 
+  <button>Send registration form</button>
+  <input type="reset" value="Reset">
+  </form>
+  
+  </section>
+  
+  </body>
+
+</html>
+  
+  
